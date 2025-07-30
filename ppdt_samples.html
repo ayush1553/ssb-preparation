@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is PPDT? </title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; }
+        h2 { color: #8e44ad; }
+        .sample-image {
+            display: block;
+            margin: 5px auto;
+            max-width: 200vw;
+            max-height: 200vh;
+            border: 2px solid #8e44ad;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .btn { margin-top: 30px; padding: 10px 25px; background: #2980b9; color: white; border: none; border-radius: 6px; text-decoration: none; font-size: 1em; }
+        .btn:hover { background: #145a86; }
+    </style>
+</head>
+<body>
+    <h2>What is PPDT?</h2>
+    {% for img in sample_images %}
+        <img src="{{ url_for('static', filename=img) }}" class="sample-image" alt="Sample Image {{ loop.index }}">
+    {% endfor %}
+    <br>
+    <a href="/ppdt" class="btn">Back to PPDT</a>
+</body>
+</html> 

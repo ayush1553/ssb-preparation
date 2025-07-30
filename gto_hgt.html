@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HGT - Half Group Task</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        h1 { color: #2980b9; }
+        .desc-btn { display: inline-block; margin: 25px 0 10px 0; padding: 14px 36px; font-size: 1.1em; background: #27ae60; color: white; border: none; border-radius: 8px; cursor: pointer; text-decoration: none; transition: background 0.2s; }
+        .desc-btn:hover { background: #1e8449; }
+        .desc-box { display: none; margin: 0 auto 30px auto; max-width: 700px; background: #eafaf1; color: #222; border: 1px solid #27ae60; border-radius: 10px; padding: 24px 30px; font-size: 1.1em; text-align: left; }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 25px; background: #2980b9; color: white; border: none; border-radius: 6px; text-decoration: none; font-size: 1em; }
+        .back-btn:hover { background: #145a86; }
+    </style>
+    <script>
+        function showDesc() {
+            document.getElementById('desc-box').style.display = 'block';
+            document.getElementById('desc-btn').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>HGT (Half Group Task)</h1>
+    <button id="desc-btn" class="desc-btn" onclick="showDesc()">Description</button>
+    <div id="desc-box" class="desc-box">
+        <strong>Half Group Task (HGT):</strong><br>
+        This task is similar to PGT but with half the group. It focuses on leadership, cooperation, and the ability to work effectively in a smaller team.
+    </div>
+    <a href="/gto" class="back-btn">Back to GTO</a>
+</body>
+</html> 
