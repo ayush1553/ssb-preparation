@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAT - Word Association Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9fc; color: #222; }
+        h1 { color: #8e44ad; text-align: center; }
+        .section { max-width: 700px; margin: 30px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); padding: 30px; }
+        ul, ol { margin-left: 30px; }
+        .desc-btn { display: block; margin: 30px auto 0 auto; padding: 12px 32px; background: #8e44ad; color: white; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: background 0.2s; }
+        .desc-btn:hover { background: #5e3370; }
+        .desc-content { display: none; margin-top: 30px; }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 25px; background: #8e44ad; color: white; border: none; border-radius: 6px; text-decoration: none; font-size: 1em; }
+        .back-btn:hover { background: #5e3370; }
+        .avoid, .prefer { margin-top: 18px; }
+        .avoid { background: #fdecea; border-left: 5px solid #e74c3c; padding: 12px 18px; border-radius: 6px; }
+        .prefer { background: #eafaf1; border-left: 5px solid #27ae60; padding: 12px 18px; border-radius: 6px; }
+        .tip { background: #f9fbe7; border-left: 5px solid #f1c40f; padding: 12px 18px; border-radius: 6px; margin-top: 18px; }
+    </style>
+    <script>
+        function showDescription() {
+            document.getElementById('desc-content').style.display = 'block';
+            document.getElementById('desc-btn').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>🌟✨ 𝐖𝐨𝐫𝐝 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐢𝐨𝐧 𝐓𝐞𝐬𝐭 (𝐖𝐀𝐓) ✨🌟</h1>
+    <button id="desc-btn" class="desc-btn" onclick="showDescription()">Show Description</button>
+    <div id="desc-content" class="desc-content section">
+        <h2>🛠️💡 𝗛𝗼𝘄 𝘁𝗵𝗲 𝗧𝗲𝘀𝘁 𝗶𝘀 𝗖𝗼𝗻𝗱𝘂𝗰𝘁𝗲𝗱 💡🛠️</h2>
+        <ul>
+            <li>📜 In this test, you’ll be shown 60 words, one after the other.</li>
+            <li>⏱️ Each word stays on the screen for 15 seconds.</li>
+            <li>✍️ You must write a sentence using the word in that time.</li>
+        </ul>
+        <ul>
+            <li>📢 A buzzer sound signals the arrival of the next word.</li>
+            <li>🎯 Try to attempt at least 45 out of 60!</li>
+        </ul>
+        <ul>
+            <li>⚠️ You can’t fake your responses — under time pressure, your true personality is revealed.</li>
+            <li>🧠 The only way to shine? 👉 Practice. Practice. Practice.</li>
+        </ul>
+        <div class="avoid">
+            <strong>❌🚫 𝗪𝗵𝗮𝘁 𝗦𝗵𝗼𝘂𝗹𝗱 𝗬𝗼𝘂 𝗔𝘃𝗼𝗶𝗱? 🚫❌</strong>
+            <ul>
+                <li>🔻 Idioms & phrases that sound overused or unoriginal.<br><span style="margin-left:2em;">⛔ Example: "Don’t fight", "One must not lie."</span></li>
+                <li>🔻 Preachy or moralizing lines.<br><span style="margin-left:2em;">🙄 Avoid lecturing statements.</span></li>
+                <li>🔻 Too much use of "I".<br><span style="margin-left:2em;">⚠️ “I love nature”, “I love talking” — sounds self-centered.</span></li>
+                <li>🔻 Negative or dark thoughts.<br><span style="margin-left:2em;">💣 Avoid sentences that show pessimism or defeat.</span></li>
+                <li>🔻 Mentioning celebrities/public figures.<br><span style="margin-left:2em;">📺 Keep the focus on YOU, not someone famous.</span></li>
+            </ul>
+        </div>
+        <div class="prefer">
+            <strong>✅🌈 𝗪𝗵𝗮𝘁 𝗜𝘀 𝗣𝗿𝗲𝗳𝗲𝗿𝗿𝗲𝗱 ✅🌈</strong>
+            <ul>
+                <li>🌟 Sentences that show your beliefs & values.<br><span style="margin-left:2em;">🫶 “Helping others is noble.”<br>🪖 “Obeying commands is a soldier’s duty.”</span></li>
+                <li>🌟 Facts based on real-world awareness.<br><span style="margin-left:2em;">📰 “India is cautious in its ties with China.”<br>🌆 “Mumbai faced bomb blasts in the past.”</span></li>
+                <li>🌟 Positive, confident tone!<br><span style="margin-left:2em;">💪 “Teamwork leads to success.”</span></li>
+            </ul>
+        </div>
+        <div class="tip">
+            <strong>🧠✨ 𝗧𝗶𝗽 𝗳𝗼𝗿 𝗦𝘂𝗰𝗰𝗲𝘀𝘀 ✨🧠</strong>
+            <ul>
+                <li>🌱 Your real thoughts will show.</li>
+                <li>📈 The more you practice, the more genuine and powerful your responses will be.</li>
+            </ul>
+        </div>
+    </div>
+    <a href="/psychology" class="back-btn">Back to Psychology</a>
+</body>
+</html> 

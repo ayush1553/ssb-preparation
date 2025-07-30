@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PPDT Practice {{ num }} - SSB Preparation</title>
+    <style>
+        .center { text-align: center; margin-top: 40px; }
+        .hidden { display: none; }
+        img { max-width: 80vw; max-height: 60vh; border: 2px solid #2980b9; border-radius: 8px; }
+        .blank-sheet {
+            width: 80vw;
+            height: 60vh;
+            background: #fff;
+            border: 2px solid #2980b9;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        .btn { margin-top: 30px; padding: 10px 25px; background: #2980b9; color: white; border: none; border-radius: 6px; text-decoration: none; font-size: 1em; }
+        .btn:hover { background: #145a86; }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('ppdt-img').classList.add('hidden');
+                document.getElementById('blank-sheet').classList.remove('hidden');
+                setTimeout(function() {
+                    document.getElementById('blank-sheet').classList.add('hidden');
+                    document.getElementById('timeout-msg').classList.remove('hidden');
+                }, 240000);
+            }, 30000);
+        };
+    </script>
+</head>
+<body>
+    <div class="center">
+        <h2>PPDT Practice {{ num }}</h2>
+        <img id="ppdt-img" src="{{ url_for('static', filename=image_filename) }}" alt="PPDT Practice Image">
+        <div id="blank-sheet" class="blank-sheet hidden"></div>
+        <div id="timeout-msg" class="hidden">
+            <h3>Time's up!</h3>
+        </div>
+        <br>
+        <a href="/ppdt" class="btn">Back to PPDT</a>
+    </div>
+</body>
+</html> 

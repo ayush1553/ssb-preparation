@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SDT - Self-Description Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9fc; color: #222; }
+        h1 { color: #8e44ad; text-align: center; }
+        .section { max-width: 700px; margin: 30px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); padding: 30px; }
+        ul, ol { margin-left: 30px; }
+        .desc-btn { display: block; margin: 30px auto 0 auto; padding: 12px 32px; background: #8e44ad; color: white; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: background 0.2s; }
+        .desc-btn:hover { background: #5e3370; }
+        .desc-content { display: none; margin-top: 30px; }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 25px; background: #8e44ad; color: white; border: none; border-radius: 6px; text-decoration: none; font-size: 1em; }
+        .back-btn:hover { background: #5e3370; }
+        .tip { background: #eafaf1; border-left: 5px solid #27ae60; padding: 12px 18px; border-radius: 6px; margin-top: 18px; }
+        .example { background: #f9fbe7; border-left: 5px solid #f1c40f; padding: 12px 18px; border-radius: 6px; margin-top: 18px; }
+    </style>
+    <script>
+        function showDescription() {
+            document.getElementById('desc-content').style.display = 'block';
+            document.getElementById('desc-btn').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>🌟 Self-Description Test (SDT) 🌟</h1>
+    <button id="desc-btn" class="desc-btn" onclick="showDescription()">Show Description</button>
+    <div id="desc-content" class="desc-content section">
+        <h2>📝 Introduction</h2>
+        <p>In this section, candidates are given <b>15 minutes⏱️</b> and asked to write five different paragraphs describing:</p>
+        <ol>
+            <li>What their parents think of them 👨‍👩‍👧</li>
+            <li>What their teachers/employers think of them 👨‍🏫👩‍💼</li>
+            <li>What their friends/colleagues think 🤝</li>
+            <li>What they think of themselves 💭</li>
+            <li>What kind of person they want to become or what improvements they want 🌱✨</li>
+        </ol>
+        <div class="tip">
+            <b>⚠️ Remember:</b> You must project your true qualities while staying realistic. Avoid exaggerations 🚫. If you claim to be a top student 📚 but have low marks, it won’t be believable ❌.
+        </div>
+        <h2>💡 Key Tip</h2>
+        <ul>
+            <li>Be realistic but positive ✅</li>
+            <li>Highlight your strengths, but acknowledge areas of improvement too 🔍</li>
+            <li>Don't just write what sounds good – write what is good about you! 🌈</li>
+        </ul>
+        <div class="example">
+            <b>📘 Illustration Example</b><br><br>
+            <b>👪 Parents' View</b><br>
+            My parents think I am a bright child 🌟 with lots of skills. They believe I can balance both academics 📚 and outdoor activities 🏃‍♂️ equally well. They know I’m dependable and trust me with any task.<br><br>
+            <b>👩‍🏫 Teachers' View</b><br>
+            My teachers say I’m sincere and enthusiastic, especially in organizing events 🗓️. They think I am good at working in teams 🤝 and show leadership qualities. However, they suggest I balance studies and outdoor interests better 📖⚖️.<br><br>
+            <b>🧑‍🤝‍🧑 Friends' View</b><br>
+            My friends love me for being helpful 💞 and sincere. They find me trustworthy 🔒, fun to be around 🎉, and share their problems with me. They describe me as someone simple and dependable.<br><br>
+            <b>🪞 Self-Image</b><br>
+            I believe I am sincere, caring 💖, and responsible. I may not top in academics, but I work hard in areas I love. I'm friendly, dynamic ⚡, and respect elders. I live simply and enjoy each moment ☀️.<br><br>
+            <b>🎯 The Kind of Person I Want to Become</b><br>
+            I aim to become a successful person through hard work and determination 💪. Since I love outdoor activities and teamwork, I aspire to join the armed forces 🇮🇳. I want to be known for my sincerity, professionalism, and leadership 👨‍✈️.
+        </div>
+    </div>
+    <a href="/psychology" class="back-btn">Back to Psychology</a>
+</body>
+</html> 
